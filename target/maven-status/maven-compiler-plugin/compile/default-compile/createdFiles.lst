@@ -1,0 +1,12 @@
+devoirs2\java\service\UtilisateurDao.class
+devoirs2\java\service\ClientDao.class
+devoirs2\java\service\EntreeDao.class
+devoirs2\java\utils\HibernateUtil.class
+devoirs2\java\service\ProduitDao.class
+devoirs2\java\service\SortieDao.class
+devoirs2\java\App.class
+devoirs2\java\service\CommandeDao.class
+devoirs2\java\service\FactureDao.class
+devoirs2\java\service\TypeClientDao.class
+devoirs2\java\service\DetailsCommandeDao.class
+devoirs2\java\service\ProfileDao.class

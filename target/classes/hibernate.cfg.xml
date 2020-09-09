@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <!-- JDBC Database connection settings -->
+        <property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+        <property name="connection.url">jdbc:mysql://localhost:3306/devoirs2rmi?useSSL=false&amp;serverTimezone=UTC</property>
+        <property name="connection.username">root</property>
+        <property name="connection.password"></property>
+        <!-- Select our SQL dialect -->
+        <property name="dialect">org.hibernate.dialect.MySQL5Dialect</property>
+        <!-- Echo the SQL to stdout -->
+        <property name="show_sql">true</property>
+        <!-- Set the current session context -->
+        <property name="current_session_context_class">thread</property>
+        <!-- Drop and re-create the database schema on startup -->
+        <property name="hbm2ddl.auto">update</property>
+        <mapping class="devoirs2.java.model.Produit"/>
+        <mapping class="devoirs2.java.model.Entree"/>
+        <mapping class="devoirs2.java.model.Sortie"/>
+        <mapping class="devoirs2.java.model.Commande"/>
+        <mapping class="devoirs2.java.model.Client"/>
+        <mapping class="devoirs2.java.model.TypeClient"/>
+        <mapping class="devoirs2.java.model.DetailsCommande"/>
+        <mapping class="devoirs2.java.model.Profile"/>
+        <mapping class="devoirs2.java.model.Utilisateur"/>
+        <mapping class="devoirs2.java.model.Facture"/>
+    </session-factory>
+</hibernate-configuration>
